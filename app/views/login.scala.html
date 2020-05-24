@@ -1,0 +1,26 @@
+@(message: String)
+
+<div class="text-light main-container container-fluid mt-5">
+  <div class="user-container bg-secondary mt-5">
+    <h2 class="header">Login</h2>
+    <label class="mylabel" for="loginName">Username: </label>
+    <input class="mb-3 text-dark" type="text" id="loginName" value="xeno"/>
+    <br>
+    <label class="mylabel" for="loginPass">Password: </label>
+    <input class="text-dark" type="password" id="loginPass" value="1234"/>
+    <br>
+    <button class="mybtn btn btn-success" onclick="login()">Login</button>
+    <br>
+  </div>
+  <p id="message" class="text-danger"> @message </p>
+  <p class="user-text">Or if you have not registered yet</p>
+  <div class="user-container bg-secondary">
+    <h2 class="header">Create user</h2>
+    <label class="mylabel" for="createName">Username: </label><input class="mb-3 text-dark" type="text" id="createName"/>
+    <br>
+    <label class="mylabel" for="createPass">Password: </label><input class="text-dark" type="password" id="createPass"/>
+    <br>
+    <button class="mybtn btn btn-info" onclick="createUser()">Create user</button>
+    <br>
+  </div>
+</div>

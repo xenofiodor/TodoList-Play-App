@@ -1,0 +1,13 @@
+@(startRoute: String)(implicit request: RequestHeader, flash: Flash)
+
+@main("Todo list"){
+  <div id="contents"></div>
+
+  <input type="hidden" id="csrfToken" value="@helper.CSRF.getToken.value"/>
+  <input type="hidden" id="loginRoute" value="@startRoute"/>
+  <input type="hidden" id="validateRoute" value="@routes.TodoList.validate()"/>
+  <input type="hidden" id="createUserRoute" value="@routes.TodoList.createUser()"/>
+  <input type="hidden" id="addTaskRoute" value="@routes.TodoList.addTask()"/>
+  <input type="hidden" id="deleteTaskRoute" value="@routes.TodoList.deleteTask()"/>
+  <input type="hidden" id="sortTasksRoute" value="@routes.TodoList.sortTasks()"/>
+}

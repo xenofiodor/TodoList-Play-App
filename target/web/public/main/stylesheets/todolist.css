@@ -1,0 +1,41 @@
+.task-text{
+    margin-top: 10px;
+    width: 35vw;
+}
+
+.task-date{
+    margin-top: 10px;
+    width: 8vw;
+    float: right;
+}
+
+.item{
+    margin: 10px;
+}
+
+.item-link{
+    font-size: large;
+    margin-right: 40px;
+}
+
+.nav-input{
+    margin-top: 10px;
+}
+
+label.nav-input{
+    font-weight: normal;
+}
+
+.first-item-link{
+    margin-left: 200px;
+}
+
+
+
+.todo-list{
+    list-style-type: none;
+}
+
+.crossed{
+    text-decoration: line-through;
+}

@@ -1,0 +1,50 @@
+@(tasks: Seq[Task])
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item item-link">
+        <a class="nav-link" href="@routes.TodoList.logout()">Logout</a>
+      </li>
+      <li class="nav-item item-link">
+        <a class="nav-link" href="@routes.TodoList.sortTasks()">Sort tasks</a>
+      </li>
+      <li class="nav-item item-link first-item-link">
+        <label class="nav-input" for="newTask">New task: </label>
+      </li>
+      <li class="nav-item item-link">
+        <input class="text-dark nav-input" type="text" id="newTask"/><br>
+      </li>
+      <li class="nav-item item-link">
+        <label class="nav-input" for="newTaskDate">Deadline: </label>
+      </li>
+      <li class="nav-item item-link">
+        <input class="text-dark nav-input" type="text" id="newTaskDate"/><br>
+      </li>
+      <li class="nav-item item-link">
+        <a class="nav-link" href="#" onclick="addTask()">Add task </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="todo-list-container text-light mt-5 ml-5">
+  <h2>Todo list</h2>
+  <ul class="mt-5 todo-list">
+    @for((task, i) <- tasks.zipWithIndex) {
+      <li class="item">
+        <div class="d-inline-flex">
+          <input id="check@i" type="checkbox" class="mr-3 mb-2" onclick="check(@i)">
+          <p class="task-text" id="task@i"> @task.task </p>
+          <p class="task-date"> @task.dateString </p>
+          <button type="button" class="btn btn-danger btn-sm" onclick="deleteTask(@i)">
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
+        </div>
+      </li>
+
+    }
+  </ul>
+</div>
+
+
