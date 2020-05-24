@@ -8,7 +8,7 @@ Creating new user, login, managing user's todo-list: adding new task with or wit
 - HTML, JavaScript (+ [JQuerry](https://jquery.com/)), CSS, [Bootstrap](https://getbootstrap.com/)
 
 ## Installing and running
-To run this project clone this repo and open the project in any IDE.  
+To install the project clone this repo.
 Run the project using `sbt run`, open the browser and load the page http://localhost:9000/load.
 
 ## Screenshots
