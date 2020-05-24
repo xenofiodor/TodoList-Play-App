@@ -5,7 +5,7 @@ Creating new user, login, managing user's todo-list: adding new task with or wit
 ## Tech used
 - [Play framework](https://www.playframework.com/)
 - Scala
-- HTML,JavaScript (+ [JQuerry](https://jquery.com/)), CSS, [Bootstrap](https://getbootstrap.com/)
+- HTML, JavaScript (+ [JQuerry](https://jquery.com/)), CSS, [Bootstrap](https://getbootstrap.com/)
 
 ## Screenshots
 Login page:  
