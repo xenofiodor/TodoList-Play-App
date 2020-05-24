@@ -7,8 +7,16 @@ Creating new user, login, managing user's todo-list: adding new task with or wit
 - Scala
 - HTML, JavaScript (+ [JQuerry](https://jquery.com/)), CSS, [Bootstrap](https://getbootstrap.com/)
 
+## Installing and running
+To run this project clone this repo and open the project in any IDE.  
+Run the project using `sbt run`, open the browser and load the page http://localhost:9000/load.
+
 ## Screenshots
 Login page:  
 <a href="https://imgur.com/C97eyK9"><img src="https://i.imgur.com/C97eyK9.png" title="source: imgur.com" /></a>
 Todo list page:  
 <a href="https://imgur.com/r4KFHOE"><img src="https://i.imgur.com/r4KFHOE.png" title="source: imgur.com" /></a>
+
+## Plans for the future app development
+- Add database support
+- Add tests
